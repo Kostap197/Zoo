@@ -1,0 +1,233 @@
+/* public/css/styles.css */
+
+/* Основные стили для страницы */
+body {
+    background-color: #f8f9fa; /* Светлый фон страницы */
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50; /* Зеленый цвет заголовков */
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Карточки (для списка животных, создания, редактирования) */
+.card {
+    border-radius: 12px; /* Закругленные углы */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #4CAF50; /* Зеленый фон */
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.card-body {
+    background-color: #ffffff; /* Белый фон для формы */
+    padding: 30px;
+}
+
+.card-body .btn {
+    width: 100%;
+}
+
+.card-body .d-flex {
+    justify-content: space-between;
+}
+
+.card-body .btn-warning {
+    background-color: #ff9800;
+}
+
+.card-body .btn-warning:hover {
+    background-color: #e68900;
+}
+
+.card-body .btn-danger {
+    background-color: #f44336;
+}
+
+.card-body .btn-danger:hover {
+    background-color: #e53935;
+}
+
+/* Форма для создания и редактирования данных */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+input[type="file"] {
+    border: 1px solid #ddd;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Страница животного */
+.animal-detail img {
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.animal-detail p {
+    font-size: 1.1rem;
+}
+
+.animal-detail .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.animal-detail .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Для списка животных */
+.list-group {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item h5 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.list-group-item p {
+    color: #555;
+}
+
+.list-group-item .btn-sm {
+    padding: 6px 10px;
+}
+
+.list-group-item img {
+    max-width: 150px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Для ошибок */
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Для кнопок */
+.btn-link {
+    color: #388e3c; /* Зеленая ссылка */
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+/* Для пагинации (если понадобится) */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-item .page-link {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: #45a049;
+}
+
+/* Дополнительные стили для модальных окон и навигации */
+.modal-content {
+    border-radius: 10px;
+}
+
+.navbar {
+    background-color: #4CAF50;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #e0e0e0;
+}

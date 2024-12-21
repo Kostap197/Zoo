@@ -31,7 +31,7 @@ Route::middleware('auth')->group(function () {
     Route::get('cages/{cage}/edit', [CageController::class, 'edit'])->name('cages.edit');
     Route::put('cages/{cage}', [CageController::class, 'update'])->name('cages.update');
     Route::delete('cages/{cage}', [CageController::class, 'destroy'])->name('cages.destroy');
-    Route::get('animals/create', [AnimalController::class, 'create'])->name('animals.create');
+    Route::get('animalss/create', [AnimalController::class, 'create'])->name('animals.create');
     Route::post('animals', [AnimalController::class, 'store'])->name('animals.store');
     Route::get('animals/{animal}/edit', [AnimalController::class, 'edit'])->name('animals.edit');
     Route::put('animals/{animal}', [AnimalController::class, 'update'])->name('animals.update');
